@@ -1,0 +1,104 @@
+a{text-decoration:none;}
+a:visited{*color:red;}
+*{color:orange;}
+
+#header{
+	background:;
+	overflow:hidden;
+}
+#header ul{
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+#header > ul > li{
+	*display:inline-block;
+	float:left;
+}
+#header > ul > li > a{
+	color:orange;
+	padding:12px;
+}
+#header ul li ul{
+	max-height:0;
+	transition: all 2s ease-in;
+}
+#header ul li:hover ul {
+	position:absolute;
+	top:2em;
+	left:17em;
+	max-height:200px;
+	border-bottom:2px solid;
+}
+.left{
+	width:24%;
+	float:left;
+	height:300px;
+	background:yellow;
+	margin-left:3px;
+}
+
+@media only screen and (max-width:800px){
+.left{
+	width:49%;
+	margin:2px 2px;
+}
+}
+@media only screen and (max-width:500px){
+.left{
+	width:99%;
+	margin:2px 2px;
+}
+}
+
+*{
+	user-select:text;
+}
+p::after{
+	content:"\00A9";
+}
+#im{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+    
+}
+#im:hover{
+box-shadow: 1px 2px 2px 1px;
+}
+h2{
+	color:purple !important;
+}
+.po{
+	width: 50%;
+    height: auto;
+    float: left;
+	position:relative;
+}
+.po img{
+	width: 100%;
+	border-radius: 0 15px;
+	transition:all 1s ease-in;
+}
+.po img:hover{
+	border-radius: 15px 0px;
+}
+.po p{
+	top: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+body {
+  background: lightgreen;
+}
+@media only screen and (orientation:landscape) {
+  body {
+    background: lightblue;
+  }
+}
+
+*Orientation: Portrait / Landscape
